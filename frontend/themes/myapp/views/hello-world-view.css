@@ -1,0 +1,8 @@
+.hello-world-view {
+  display: flex;
+  height: 100%;
+}
+
+.hello-world-view .map {
+  flex: 1;
+}
