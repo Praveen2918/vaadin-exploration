@@ -1,0 +1,75 @@
+.header1-parent {
+    font-size:30px !important;
+}
+.header2-parent {
+    font-size:26px !important;
+}
+
+.centered {
+    align-items : center;
+    justify-content:center;
+}
+
+.para-parent {
+    font-size:14px !important;
+}
+
+@media only screen and (min-width: 960px) {
+        /* styles for browsers larger than 960px; */
+        .h1-child , {
+            font-size : 1.6em !important;
+        }
+        .h2-child {
+            font-size : 1.4em !important;
+        }
+        .p1-child {
+            font-size : 0.8em !important;
+        }
+    }
+    @media only screen and (min-width: 1440px) {
+        /* styles for browsers larger than 1440px; */
+        .h1-child  {
+            font-size : 1.8em !important;
+        }
+        .h2-child {
+                    font-size : 1.6em !important;
+                }
+        .p1-child {
+             font-size : 1.3em !important;
+        }
+    }
+    @media only screen and (min-width: 2000px) {
+        /* for sumo sized (mac) screens */
+        .h1-child  {
+                font-size : 2em !important;
+        }
+        .h2-child {
+                            font-size : 1.8em !important;
+                        }
+         .p1-child {
+                     font-size : 1.6em !important;
+                }
+    }
+    @media only screen and (max-device-width: 480px) {
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       .h1-child, .p1-child , .h2-child {
+               font-size : 0.7em !important;
+       }
+
+    }
+    @media only screen and (device-width: 768px) {
+       /* default iPad screens */
+       .h1-child, .p1-child
+       {
+               font-size:1.2em !important;
+       }
+
+    }
+    /* different techniques for iPad screening */
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+      /* For portrait layouts only */
+    }
+
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+      /* For landscape layouts only */
+    }
