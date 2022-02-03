@@ -1,6 +1,6 @@
 # Vaadin Upload
 
-This is project to make hands dirty in Vaadin Upload component.Also allow upload component to capture photos for uploading.
+This project is to make hands dirty in Vaadin Upload component.Also allow upload component to capture photos for uploading.
 
 ## Running the application
 
