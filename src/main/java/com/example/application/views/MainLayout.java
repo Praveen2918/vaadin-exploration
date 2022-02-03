@@ -1,8 +1,8 @@
 package com.example.application.views;
 
 
-import com.example.application.views.about.AboutView;
-import com.example.application.views.helloworld.HelloWorldView;
+
+import com.example.application.views.upload.UploadView;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
@@ -64,9 +64,9 @@ public class MainLayout extends AppLayout {
     private Label viewTitle;
 
     public MainLayout() {
-        setPrimarySection(Section.DRAWER);
+        setPrimarySection(Section.NAVBAR);
         addToNavbar(true, createHeaderContent());
-        addToDrawer(createDrawerContent());
+        //addToDrawer(createDrawerContent());
     }
 
     private Component createHeaderContent() {
@@ -113,9 +113,9 @@ public class MainLayout extends AppLayout {
 
     private MenuItemInfo[] createMenuItems() {
         return new MenuItemInfo[]{ //
-                new MenuItemInfo("Hello World", "la la-map", HelloWorldView.class), //
+                new MenuItemInfo("Hello World", "la la-map", UploadView.class), //
 
-                new MenuItemInfo("About", "la la-globe", AboutView.class), //
+                 //
 
         };
     }
