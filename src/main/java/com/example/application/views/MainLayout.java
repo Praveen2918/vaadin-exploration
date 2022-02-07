@@ -114,7 +114,7 @@ public class MainLayout extends AppLayout {
 
     private MenuItemInfo[] createMenuItems() {
         return new MenuItemInfo[]{ //
-                new MenuItemInfo("Hello World", "la la-map", UploadView.class), //
+                new MenuItemInfo("UploadView", "la la-map", UploadView.class), //
                 new MenuItemInfo("PdfViewer","la la-map" , PdfViewer.class)
                  //
 

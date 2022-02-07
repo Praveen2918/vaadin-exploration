@@ -4,7 +4,7 @@ This project is to make hands dirty in Vaadin Upload component.Also allow upload
 
 ## Running the application
 
-- `git clone https://github.com/Praveen2918/vaadin-upload.git`
+- `https://github.com/Praveen2918/vaadin-exploration.git`
 - From Terminal - mvn spring-boot:run
 - In browser open url `http://localhost:9090/zio-dm/`
 
