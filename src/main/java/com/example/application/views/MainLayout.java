@@ -2,6 +2,7 @@ package com.example.application.views;
 
 
 
+import com.example.application.views.pdfviewer.PdfViewer;
 import com.example.application.views.upload.UploadView;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.applayout.AppLayout;
@@ -66,7 +67,7 @@ public class MainLayout extends AppLayout {
     public MainLayout() {
         setPrimarySection(Section.NAVBAR);
         addToNavbar(true, createHeaderContent());
-        //addToDrawer(createDrawerContent());
+        addToDrawer(createDrawerContent());
     }
 
     private Component createHeaderContent() {
@@ -114,7 +115,7 @@ public class MainLayout extends AppLayout {
     private MenuItemInfo[] createMenuItems() {
         return new MenuItemInfo[]{ //
                 new MenuItemInfo("Hello World", "la la-map", UploadView.class), //
-
+                new MenuItemInfo("PdfViewer","la la-map" , PdfViewer.class)
                  //
 
         };
