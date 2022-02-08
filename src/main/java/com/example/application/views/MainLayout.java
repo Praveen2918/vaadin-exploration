@@ -2,6 +2,7 @@ package com.example.application.views;
 
 
 
+import com.example.application.views.dialog.DialogView;
 import com.example.application.views.pdfviewer.PdfViewer;
 import com.example.application.views.upload.UploadView;
 import com.vaadin.flow.component.Component;
@@ -115,8 +116,8 @@ public class MainLayout extends AppLayout {
     private MenuItemInfo[] createMenuItems() {
         return new MenuItemInfo[]{ //
                 new MenuItemInfo("UploadView", "la la-map", UploadView.class), //
-                new MenuItemInfo("PdfViewer","la la-map" , PdfViewer.class)
-                 //
+                new MenuItemInfo("PdfViewer","la la-map" , PdfViewer.class),
+                new MenuItemInfo("DialogView","la la-map", DialogView.class)
 
         };
     }
