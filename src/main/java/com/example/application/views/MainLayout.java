@@ -3,12 +3,13 @@ package com.example.application.views;
 
 
 import com.example.application.views.dialog.DialogView;
-import com.example.application.views.pdfviewer.PdfViewer;
+import com.example.application.views.pdfviewer.Preview;
 import com.example.application.views.upload.UploadView;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.button.ButtonVariant;
+import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.component.html.*;
 import com.vaadin.flow.router.PageTitle;
@@ -18,6 +19,7 @@ import com.vaadin.flow.router.RouterLink;
  * The main view is a top-level placeholder for other views.
  */
 @PageTitle("Main")
+@CssImport(value = "./styles/app-layout.css" , themeFor = "vaadin-app-layout")
 public class MainLayout extends AppLayout {
 
     /**
@@ -116,7 +118,7 @@ public class MainLayout extends AppLayout {
     private MenuItemInfo[] createMenuItems() {
         return new MenuItemInfo[]{ //
                 new MenuItemInfo("UploadView", "la la-map", UploadView.class), //
-                new MenuItemInfo("PdfViewer","la la-map" , PdfViewer.class),
+                new MenuItemInfo("Preview","la la-map" , Preview.class),
                 new MenuItemInfo("DialogView","la la-map", DialogView.class)
 
         };
