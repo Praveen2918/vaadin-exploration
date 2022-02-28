@@ -1,0 +1,121 @@
+.attribution-container {
+    margin-top : 4%;
+    background : white;
+    border-radius : 16px;
+    box-shadow : 3px 3px 12px #00000014;
+    opacity : 1;
+    overflow : scroll;
+}
+
+.process-container {
+     background : white;
+     border-radius : 16px;
+     box-shadow : 3px 3px 12px #00000014;
+     opacity : 1;
+     overflow : scroll;
+}
+
+.process-header {
+    color : black;
+    font-family : 'Poppins',sans-serif;
+    font-size : 14px;
+    font-weight : bold;
+    letter-spacing : 0.5px;
+}
+
+.process-container {
+    width : 100%;
+    margin-left : 2%;
+}
+
+.process-label {
+    font-family : 'Poppins',sans-serif;
+    font-weight : bold;
+     color:#00000099;
+      font-size : 12px;
+}
+
+.process-div {
+     margin-top : 4%;
+     background: white;
+     border-radius: 16px;
+     box-shadow: 3px 3px 12px #00000014;
+     opacity: 1;
+     overflow: scroll;
+}
+.attribution-form {
+    margin : 2%;
+}
+
+.stage-icon {
+    margin-left : auto;
+    width : 20px;
+}
+    @media only screen and (min-width: 960px) {
+        /* styles for browsers larger than 960px; */
+        .parent-layout {
+            display : flex;
+            flex-direction : row;
+            width : 100%;
+            justify-content : center;
+            align-items : center;
+        }
+         .attribution-container {
+              width :40%;
+              height : 400px;
+         }
+
+          .process-container {
+                       width :40%;
+                       height : 400px;
+          }
+    }
+    @media only screen and (min-width: 1440px) {
+        /* styles for browsers larger than 1440px; */
+
+    }
+    @media only screen and (min-width: 2000px) {
+        /* for sumo sized (mac) screens */
+
+    }
+    @media only screen and (max-device-width: 480px) {
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+         .parent-layout {
+                    display : flex;
+                    flex-direction : column;
+                    width : 100%;
+                    justify-content : center;
+                    align-items : center;
+         }
+
+         .attribution-container {
+                width :92%;
+                height : 400px;
+         }
+
+         .attribution-form
+         {
+            margin :2%;
+         }
+
+         .process-container {
+            width : 92%;
+            height: 300px
+         }
+         .process-div {
+            width : 92%;
+         }
+    }
+    @media only screen and (device-width: 768px) {
+       /* default iPad screens */
+
+
+    }
+    /* different techniques for iPad screening */
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+      /* For portrait layouts only */
+    }
+
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+      /* For landscape layouts only */
+    }
